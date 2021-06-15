@@ -8,10 +8,18 @@
 </head>
 <body>
     <h3>learning classes</h3>
-<p id="laptop"></p>
+<p id="details"></p>
 
-
+<!--temperature-->
+<p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+    oninput="temperatureConverter(this.value)"
+    onchange="temperatureConverter(this.value)">
+  </p>
+  <p>Celsius: <span id="outputCelsius"></span></p>
 
     <script src="root.js" async defer></script>
+
 </body>
 </html>

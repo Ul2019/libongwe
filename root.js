@@ -7,5 +7,14 @@ class person{
 }
 myperson = new person("mihlali", "dzingwa", "21", "female");
 }
-document.getElementById("laptop").innerHTML = myperson.name+"mihlali" +myperson.surname+" " +myperson.age+ " "+myperson.gender+" ";
+document.getElementById("details").innerHTML = (myperson.name+" " +myperson.surname+" " +myperson.age+ " "+myperson.gender+" ");
 console.log(myperson);
+
+
+
+//temperature
+
+function temperatureConverter(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+  }
